@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+service SqlService {
+  rpc functionRun (functionRunParams) returns (functionRunReturn);
+}
+
+message functionRunReturn{
+  string name = 1;
+}
+
+message functionRunParams {
+  string name = 1;
+}
